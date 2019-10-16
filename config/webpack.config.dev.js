@@ -148,7 +148,12 @@ module.exports = {
             options: {
               
               compact: true,
+              plugins: [["import",{
+                libraryName: "antd",
+                style: "css"
+              }]]
             },
+            
           },
 
           // Compile .tsx?

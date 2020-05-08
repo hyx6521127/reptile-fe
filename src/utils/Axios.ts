@@ -77,8 +77,8 @@ import axios, {
     private constructor() {
       const options = {
         //  更换baseurl
-        baseURL: 'http://localhost:3000',
-        timeout: 6000
+        baseURL: '/api',
+        // timeout: 6000
       }
       this.session = axios.create(options)
       this.session.interceptors.request.use(
@@ -96,7 +96,7 @@ import axios, {
       }
       return Http.instance
     }
-    public checkResponse(response: IData) {
+    public checkResponse(response: IData): Promise<IApiData> {
       return new Promise((resolve, reject) => {
         const { data } = response
         const { code, msg } = data

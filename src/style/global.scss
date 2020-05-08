@@ -47,4 +47,8 @@ a {
     &:active {
       text-decoration: none;
     }
-  }
+}
+
+#root,.App{
+  height:100%;
+}

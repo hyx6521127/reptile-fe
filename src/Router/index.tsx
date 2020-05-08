@@ -1,7 +1,11 @@
 import React from 'react'
-
-import Routes from './Routes'
+import { HashRouter as Router, Route, Switch } from "react-router-dom"
+import Layout from "Layout"
 
 export default function root(): JSX.Element {
-    return <Routes />
+    return <Router>
+    <Switch>
+      <Route path="/" component={Layout} />
+    </Switch>
+  </Router>
 }

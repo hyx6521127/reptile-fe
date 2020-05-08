@@ -20,7 +20,8 @@
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "skipLibCheck": true
   },
   "exclude": [
     "node_modules",
@@ -29,5 +30,8 @@
     "acceptance-tests",
     "webpack",
     "src/setupTests.ts"
+  ],
+  "include": [
+    "./src/*"
   ]
 }
